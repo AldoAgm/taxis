@@ -419,11 +419,7 @@
                 confirmButtonText: 'Salir'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    Swal.fire(
-                        'Deleted!',
-                        'Your file has been deleted.',
-                        'success'
-                    )
+                    window.location.href = 'login.html';
                 }
             })
         });
